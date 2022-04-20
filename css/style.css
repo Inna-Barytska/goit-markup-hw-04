@@ -121,7 +121,6 @@ h4 {
 .centered {
   text-align: center;
 }
-
 .hero-title {
   width: 696px;
   margin-top: 0;
@@ -141,6 +140,8 @@ h4 {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--bgc-color);
+  background-image: url(../images/hero.jpg);
+  /* background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%); */
 }
 .button-text {
   font-family: inherit;
@@ -172,6 +173,10 @@ h4 {
   background-color: #fff;
   padding-bottom: 30px;
 }
+.sn-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .img-photo {
   margin-bottom: 30px;
 }
@@ -202,34 +207,22 @@ h4 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+.svg-icon {
+  width: 65.32px;
+  height: 70px;
+}
 .desc-list {
   display: flex;
 }
 .desk-item {
   width: 270px;
 }
-.desc-list > .desc-item {
-  background-color: yellowgreen;
-}
-.icon-first::before {
-  content: "";
-  display: block;
-  background-image: url(../images/icon-first.svg);
+.wrapper-img {
+  width: 270px;
   height: 120px;
-  padding: 25px 102px;
-  padding-bottom: 30px;
-  padding-top: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-second::before {
-  content: "";
-  display: block;
-  height: 70px;
-  background-image: url(../images/icon-first.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 30px 30px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: yellowgreen;
 }
 .desc-p {
   font-size: 14px;
@@ -250,6 +243,56 @@ h4 {
   line-height: 1.18;
   color: var(--secondary-text-color);
   text-align: center;
+  margin-bottom: 16px;
+}
+.sn-list {
+  display: flex;
+}
+.sn-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  outline: 1px solid blueviolet;
+  border-radius: 50%;
+}
+.footer-about {
+  display: flex;
+}
+.footer-sn {
+  margin-left: 70px;
+}
+.social-networks {
+  width: 20px;
+  height: 20px;
+}
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-item {
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+  /* padding: 16px 32px; */
+  margin-right: 30px;
+  background-position: center;
+  border: 1px solid #afb1b8;
+}
+.client-item:last-child {
+  margin-right: 0;
+}
+.client-list {
+  display: flex;
+}
+.icon-company {
+  /* height: 43.92px;
+  width: 93.79px; */
+}
+
+.first-logo {
+  height: 46.7px;
+  width: 41px;
+  fill: #afb1b8;
 }
 /* footer */
 .logo-footer {
