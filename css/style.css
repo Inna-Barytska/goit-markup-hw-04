@@ -27,8 +27,8 @@ body {
 }
 /* index.html */
 /* header */
-.header {
-  border-bottom: 1px solid #eeeeee;
+header {
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -162,8 +162,11 @@ h4 {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
+  font-weight: 700;
   padding: 10px 32px;
   min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .button-text:hover,
@@ -183,6 +186,9 @@ h4 {
   margin-right: 30px;
   background-color: #fff;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .sn-wrapper {
   display: flex;
@@ -229,13 +235,17 @@ h4 {
   width: 270px;
 }
 .wrapper-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .desc-p {
+  width: 270px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--secondary-text-color);
@@ -275,6 +285,7 @@ h4 {
 }
 .sn-main {
   fill: #afb1b8;
+  margin-right: 10px;
 }
 
 .sn-footer {
@@ -289,9 +300,10 @@ h4 {
 .sn-link:focus {
   background-color: var(--accent-color);
 }
-.footer-join {
-  width: 44px;
-  height: 44px;
+
+.join {
+  font-size: 14px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--text-color);
 }
@@ -424,6 +436,8 @@ button {
 .filter .filter-list:focus {
   background-color: var(--accent-color);
   color: var(--text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .visually-hidden {
   position: absolute;
@@ -464,6 +478,11 @@ button {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+.port-item:hover,
+.port-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .port-item:nth-child(3n) {
   margin-right: 0;
